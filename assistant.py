@@ -12,7 +12,7 @@ def speak(audioString):
     tts.save("audio.mp3")
 
 
-    subprocess.call(['C:\\Users\miapata\PycharmProjects\\untitled\\mpg123.exe','audio.mp3'])
+    subprocess.call(['C:\\Users\\miapata\\Documents\\PythonVirtualAssistant\\mpg123.exe','audio.mp3'])
 
 
 
@@ -57,5 +57,5 @@ def jarvis(data):
 time.sleep(2)
 speak("Hi Frank, what can I do for you?")
 while 1:
-    data = recordAudio()
-jarvis(data)
+    data = input("how are you")
+    jarvis(data)
